@@ -36,7 +36,7 @@ export const Data = [
     date: '2022-12-23',
   },
   {
-    id: 5,
+    id: 4,
     header: '작고 아기자기하지만, 개발조직의 문화 만들기 [ep 4. 정기 밋업]',
     description: '웹프론트개발그룹 운영진 1기의 정기 밋업 이야기를 공유합니다',
 
@@ -44,7 +44,7 @@ export const Data = [
     date: '2022-12-23',
   },
   {
-    id: 6,
+    id: 5,
     header: '우리 팀의 타임스크립트 컨벤션 정하기 여정',
     description:
       'TypeScript(타입스크립트) 컨벤션을 정해 나간 여정을 공유합니다',
@@ -53,7 +53,7 @@ export const Data = [
     date: '2022-12-23',
   },
   {
-    id: 7,
+    id: 6,
     header: '콘텐츠 브로드캐스팅이 가능한 CMS 만들기',
     description:
       '길다면 길고 짧다면 짧은 3개월간에 걸친 CMS(Content Management System) 슬롯화 프로젝트',
@@ -62,7 +62,7 @@ export const Data = [
     date: '2022-12-23',
   },
   {
-    id: 8,
+    id: 7,
     header: 'Kotlin 테스트 코드 자동화 Intellij 플러그인 개발기',
     description:
       '개발을 하다 보면 코드의 신뢰성을 검증하거나 내용을 전달하는 목적으로 테스트 코드를 많이 작성하게 되는데요',
@@ -71,7 +71,7 @@ export const Data = [
     date: '2022-12-23',
   },
   {
-    id: 7,
+    id: 8,
     header: 'PostgreSQL Vacuum에 대한 거의 모든 것',
     description:
       'PostgreSQL에는 다른 DBMS에서는 볼 수 없는 Vacuum이라는 개념이 존재합니다',
@@ -80,7 +80,7 @@ export const Data = [
     date: '2022-12-23',
   },
   {
-    id: 8,
+    id: 9,
     header:
       '작고 아기자기하지만, 개발조직의 문화 만들기 [ep 3. 소소한 단기 프로젝트]',
     description:
@@ -90,7 +90,7 @@ export const Data = [
     date: '2022-12-23',
   },
   {
-    id: 9,
+    id: 10,
     header:
       '작고 아기자기하지만, 개발조직의 문화 만들기 [ep 2. 장기프로젝트 기획하고 운영하기]',
     description: '지난 글 "작고 아기자기하지만',
