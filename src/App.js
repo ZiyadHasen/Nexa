@@ -3,12 +3,16 @@ import Hero from './components/Hero.jsx';
 import Search from './components/Search.jsx';
 import Profiles from './components/Profiles.jsx';
 import { Data } from './data.js';
+import SliderFrame from './components/SliderFrame.jsx';
+import Testimonials from './components/Testimonials.jsx';
+
 function App() {
   return (
     <div>
       <Hero />
-      <div className='max-w-[1200px] mx-auto my-12'>
+      <div className='max-w-[1100px] mx-auto my-12'>
         <Search />
+
         {Data.map((user) => (
           <Profiles
             key={user.id}
@@ -19,8 +23,10 @@ function App() {
             date={user.date}
           />
         ))}
-        <h1 className='text-7xl text-center text-blue-400'>hello tailwind</h1>
       </div>
+
+      <SliderFrame />
+      <Testimonials />
     </div>
   );
 }
