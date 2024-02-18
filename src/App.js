@@ -5,6 +5,7 @@ import Profiles from './components/Profiles.jsx';
 import { Data } from './data.js';
 import SliderFrame from './components/SliderFrame.jsx';
 import Testimonials from './components/Testimonials.jsx';
+import How from './components/How.jsx';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
 
       <SliderFrame />
       <Testimonials />
+      <How />
     </div>
   );
 }

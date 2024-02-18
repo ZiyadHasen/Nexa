@@ -3,6 +3,7 @@ module.exports = {
     screens: {
       largeMedium: '1200px',
       medium: '900px',
+      midSmall: '750px',
       small: '540px',
       extraSmall: '450px',
       verySmall: '300px',
@@ -10,6 +11,7 @@ module.exports = {
     extend: {
       backgroundColor: {
         474747: '#474747',
+        D3D3D: '#3D3D3D',
       },
       textColor: {
         'light-gray': '#ACACAC',
@@ -17,6 +19,8 @@ module.exports = {
       },
       fontSize: {
         'small-size': '13px',
+        'very-small-size': '10px',
+        'very-very-small-size': '8px',
         lg: '20px',
       },
       borderColor: {
