@@ -1,12 +1,11 @@
 module.exports = {
   theme: {
     screens: {
-      xxs: '300px',
-      xs: '450px',
-      sm: '540px',
-      md: '900px',
-      xl: '1200px',
-      '2xl': '1536px',
+      largeMedium: '1200px',
+      medium: '900px',
+      small: '540px',
+      extraSmall: '450px',
+      verySmall: '300px',
     },
     extend: {
       backgroundColor: {
