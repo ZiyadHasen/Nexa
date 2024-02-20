@@ -6,12 +6,23 @@ import simple3 from '../images/How/simple3.png';
 import detail1 from '../images/How/detail1.jpg';
 import detail2 from '../images/How/detail2.png';
 import detail3 from '../images/How/detail3.png';
+import { BlurhashCanvas } from 'react-blurhash';
 
 export default function How() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 900);
   const [isDetailMode1, setDetailMode1] = useState(true);
   const [isDetailMode2, setDetailMode2] = useState(false);
   const [isDetailMode3, setDetailMode3] = useState(false);
+
+  const [imageLoaded, setImageLoaded] = useState(false);
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      setImageLoaded(true);
+    };
+
+    img.src = simple3;
+  }, [simple3]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -61,13 +72,28 @@ export default function How() {
           />
         ) : (
           <div className='relative'>
+            <div
+              style={{
+                display: imageLoaded ? 'none' : 'inline',
+                borderRadius: '12px',
+              }}
+            >
+              <BlurhashCanvas
+                width='430'
+                height='550'
+                hash='LE5PI8cupJayT0tSkrkXivaJozkW'
+                punch={1}
+                style={{ borderRadius: '16px' }}
+              />
+            </div>
             <img
+              style={{ display: !imageLoaded ? 'none' : 'inline' }}
               src={simple1}
               className='inline w-[430px] h-[550px] max-largeMedium:h-[]'
               alt='Simple 1'
             />
             <button
-              onClick={toggleDetailMode1}
+              onMouseOver={toggleDetailMode1}
               className='text-6xl bg-D3D3D pt-1 pb-3 px-4 rounded-full font-thin absolute bottom-[2rem] right-8 text-white'
             >
               +
@@ -86,13 +112,28 @@ export default function How() {
           />
         ) : (
           <div className='relative'>
+            <div
+              style={{
+                display: imageLoaded ? 'none' : 'inline',
+                borderRadius: '12px',
+              }}
+            >
+              <BlurhashCanvas
+                width='430'
+                height='550'
+                hash='LLNm$mtlxbIo-p_Nn$xu?bIU4.-;'
+                punch={1}
+                style={{ borderRadius: '16px' }}
+              />
+            </div>
             <img
+              style={{ display: !imageLoaded ? 'none' : 'inline' }}
               src={simple2}
               className='inline w-[430px] h-[550px]'
               alt='Simple 2'
             />
             <button
-              onClick={toggleDetailMode2}
+              onMouseOver={toggleDetailMode2}
               className='text-6xl bg-D3D3D pt-1 pb-3 px-4 rounded-full font-thin absolute bottom-[2rem] right-8 text-white'
             >
               +
@@ -111,13 +152,29 @@ export default function How() {
           />
         ) : (
           <div className='relative'>
+            <div
+              style={{
+                display: imageLoaded ? 'none' : 'inline',
+                borderRadius: '12px',
+              }}
+            >
+              <BlurhashCanvas
+                width='430'
+                height='550'
+                hash='LVP75?~qR%s:_MIBbGs:D%-paxWB'
+                punch={1}
+                style={{ borderRadius: '16px' }}
+              />
+            </div>
             <img
+              style={{ display: !imageLoaded ? 'none' : 'inline' }}
               src={simple3}
               className='inline w-[430px] h-[550px]'
               alt='Simple 3'
             />
+
             <button
-              onClick={toggleDetailMode3}
+              onMouseOver={toggleDetailMode3}
               className='text-6xl bg-D3D3D pt-1 pb-3 px-4 rounded-full font-thin absolute bottom-[2rem] right-8 text-white'
             >
               +

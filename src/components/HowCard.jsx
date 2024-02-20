@@ -1,9 +1,30 @@
 import React from 'react';
+import { useEffect } from 'react';
+import { useState } from 'react';
+import { BlurhashCanvas } from 'react-blurhash';
 
 export default function HowCard({ detailedImage, text, header, buttonText }) {
+  const [imageLoaded, setImageLoaded] = useState(false);
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      setImageLoaded(true);
+    };
+
+    img.src = detailedImage;
+  }, [detailedImage]);
   return (
     <div className='relative max-medium:mx-[4rem]  max-medium:mx-[4rem] max-extraSmall:mx-[2rem]'>
+      <div style={{ display: imageLoaded ? 'none' : 'inline' }}>
+        <BlurhashCanvas
+          width={700}
+          height={550}
+          hash='L2MaR]xufQxu~qj[fQj[?bfQfQfQ'
+          punch={1}
+        />
+      </div>
       <img
+        style={{ display: !imageLoaded ? 'none' : 'inline' }}
         src={detailedImage}
         alt='Detailed'
         className='inline h-[550px] max-medium:h-[350px] max-extraSmall:h-[260px] max-medium:w-[700px] '
