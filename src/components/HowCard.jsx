@@ -17,7 +17,7 @@ export default function HowCard({ detailedImage, text, header, buttonText }) {
     <div className='relative max-medium:mx-[4rem]  max-medium:mx-[4rem] max-extraSmall:mx-[2rem]'>
       <div style={{ display: imageLoaded ? 'none' : 'inline' }}>
         <BlurhashCanvas
-          width={700}
+          width={710}
           height={550}
           hash='L2MaR]xufQxu~qj[fQj[?bfQfQfQ'
           punch={1}
