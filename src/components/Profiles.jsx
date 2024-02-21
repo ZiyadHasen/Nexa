@@ -20,4 +20,4 @@ export default function profiles({ id, header, description, image, date }) {
     </div>
   );
 }
-// border-b-2 border-gray-700
+

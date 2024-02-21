@@ -18,7 +18,6 @@ export default function Search() {
               className='focus:outline-none text-black w-full py-3 px-10 rounded-full pr-16 border-gray-300'
             />
             <div className='absolute right-4'>
-              {/* Replace with your SVG icon */}
               <div>
                 <i className='fa fa-search  bg-white text-gray-700 px-4 text-xl  cursor-pointer'></i>
               </div>

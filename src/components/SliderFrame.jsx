@@ -36,12 +36,12 @@ export default function SliderFrame() {
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1200, // Use the largeMedium screen size
+        breakpoint: 1600,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -50,7 +50,16 @@ export default function SliderFrame() {
         },
       },
       {
-        breakpoint: 900, // Use the medium screen size
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 900,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -59,7 +68,7 @@ export default function SliderFrame() {
         },
       },
       {
-        breakpoint: 540, // Use the small screen size
+        breakpoint: 540,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
